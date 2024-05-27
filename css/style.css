@@ -468,13 +468,13 @@ header .nav-bar{
 }
 
 .card {
-    height: 310px;
+    height: 100%;
     width: 320px;
     background-color: #fff;
     border-radius: 20px;
     position: relative;
     margin: 15px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     flex-grow:1;
     flex-basis: 200;
     font-size: 10px;
@@ -486,7 +486,7 @@ header .nav-bar{
         margin-top: 10px; /* Add margin to separate stars from text */
     }
 
-.card :hover{
+.item-image img :hover{
 
   color: rgb(247, 247, 247);
   background-color: rgb(201, 147, 31);
