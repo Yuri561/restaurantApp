@@ -30,3 +30,20 @@ menuBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     navigation.classList.remove("active");
 });
+
+// click event for tabs nav in menu page
+
+document.addEventListener('DOMContentLoaded', function () {
+	const tabs = document.querySelectorAll('.tab_label');
+
+	tabs.forEach((tab) => {
+		tab.addEventListener('click', function () {
+			const targetId = this.getAttribute('data-target');
+			const targetSection = document.getElementById(targetId);
+
+			if (targetSection) {
+				targetSection.scrollIntoView({ behavior: 'smooth' });
+			}
+		});
+	});
+});
