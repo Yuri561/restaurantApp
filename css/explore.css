@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* default */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+
+p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 25px;
+
+}
+
+
+.portfolio-content {
+  display: flex;
+  flex-direction: row; /* Set the flex direction to horizontal */
+  flex-wrap: wrap; /* Prevent wrapping to the next line */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+
+
+.card1 {
+  flex-basis: 20%; /* Distribute equal space for each skill */
+  padding: 35px;
+  border-radius: 0.5rem;
+  transition: all ease;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+.card1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+            -23px 0 20px -23px rgba(0, 0, 0, .8),
+            23px 0 20px -23px rgba(0, 0, 0, .8),
+            inset 0 0 40px rgba(0, 0, 0, .1);
+  
+}
+
+.card1 img:hover{
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.skill-text {
+  text-align: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 1rem;
+  
+}
+
+
+
+
+
